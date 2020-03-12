@@ -3,5 +3,5 @@ description: Portfolio
 author: Jonathan Matthey
 analytics: UA-96559329-1
 exclude: [ _design, README ]
-# baseurl: "http://www.jonathanmatthey.com/redesign/_site/"
+baseurl: "http://tessajewel.com"
 baseurl: "/"
