@@ -3,4 +3,4 @@ description: Portfolio
 author: Tessa Jewel
 analytics: UA-59004103-2
 exclude: [ _design, README ]
-baseurl: "/"
+baseurl: "http://tessajewel.com/"
