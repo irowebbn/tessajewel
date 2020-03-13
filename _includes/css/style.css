@@ -751,7 +751,7 @@ td {
       width: 25%;
     }
     .post-wide .project-description > .row > .col:nth-child(2) {
-      width: 30%;
+      width: 60%;
       margin-right: 5%;
     }
     .post-wide .project-description > .row > .col:nth-child(3) {
