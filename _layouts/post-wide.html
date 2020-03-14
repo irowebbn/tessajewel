@@ -8,7 +8,7 @@ layout: default
       <source src="{{page.video}}" type="video/mp4">
     </video>
   {% else %}
-    <div class="post-wide-hero {{page.uid}}-hero" style="background-image:url({{ site.baseurl }}img/{{page.uid}}/hero.jpg); background-color:{{page.hero-bg-color}}"></div>
+    <div class="post-wide-hero {{page.uid}}-hero" style="background-image:url({{ site.baseurl }}img/{{page.type}}/{{page.uid}}.jpg); background-color:{{page.hero-bg-color}}"></div>
   {% endif %}
   <div class="post post-wide">
     <div class="project-description">
@@ -17,10 +17,13 @@ layout: default
           <h2 class="project-title">{{ page.title }}</h2>
           <h3>{{ page.medium }}</h3>
           <h3>{{ page.dates }}</h3>
+          {% if page.poster contains "poster" %}
+          <img src="{{site.baseurl}}img/{{page.type}}/{{page.show}}/{{page.poster}}.jpg" width = "100%"/>
+          {% endif %}
         </div>
         <div class="col">
-          <h3>Contribution</h3>
-          {% for p in page.contribution %}
+          <h3>Description</h3>
+          {% for p in page.description %}
             <p>{{ p | textilize }}</p>
           {% endfor %}
         </div>

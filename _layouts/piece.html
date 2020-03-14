@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div id="post-container">
+  <!-- {% if page.herotype == "video" %}
+    <video width="100%"  poster="" autoplay controls>
+      <source src="{{page.video}}" type="video/mp4">
+    </video>
+  {% else %}
+    <div class="piece-hero {{page.uid}}-hero" style="background-image:url({{ site.baseurl }}img/{{page.type}}/{{page.show}}/{{page.uid}}.jpg); background-color:{{page.hero-bg-color}}"></div>
+  {% endif %} -->
+    <div class="post post-narrow">
+        <h2 class="project-title"><i>{{ page.title }}</i></h2>
+        <h3>{{ page.medium }}</h3>
+        <h3>{{ page.dates }}</h3>
+        {{ content }}
+        <div class="col">
+            {% for p in page.description %}
+              <p>{{ p | textilize }}</p>
+            {% endfor %}
+          </div>
+    </div>
+</div>
+
+
+
+{% if page.next.url %}
+  <a href="{{page.next.url}}" title="{{page.next.title}}" class="next-project target"></a>
+{% endif %}
+{% if page.previous.url %}
+  <a href="{{page.previous.url}}" title="{{page.previous.title}}" class="prev-project target"></a>
+{% endif %}

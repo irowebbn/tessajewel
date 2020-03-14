@@ -381,6 +381,10 @@ td {
     position: absolute;
   }
 
+  header .sub-nav ul li{
+    padding: 0;
+  }
+
   header .mobile-nav {
     display: none;
     text-align: right;
@@ -388,7 +392,7 @@ td {
 
   header nav ul li {
     display: inline-block;
-    margin: 0 0px;
+    margin-top: 1px;
     padding: 10px;
   }
 
@@ -715,6 +719,20 @@ td {
     background-repeat: no-repeat;
     z-index: -1;
     position: relative;
+  }
+
+  .piece-hero{
+    margin-top:30px;
+    width:100%;
+    height:350px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: relative;
+  }
+
+  .piece-photo{
+    width: 700px;
   }
 
   .post-wide .project-title{
