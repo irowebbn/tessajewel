@@ -26,7 +26,9 @@ description: <p> Within the unique bond of family, we see many traditions reflec
           </span>
         </div>
       </a>
-      <img class="thumb" src="{{site.baseurl}}img/{{post.type}}/{{post.show}}/{{ post.uid }}.jpg" />
+      <div class = "img-container">
+        <img class="thumb" src="{{site.baseurl}}img/{{post.type}}/{{post.show}}/{{ post.uid }}.jpg" />
+      </div>
       <div class="aspect-two-one"></div>
     </div>
   </li>
