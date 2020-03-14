@@ -398,6 +398,7 @@ td {
 
   header nav.sub-nav ul li {
     margin: 0 0 0 10px;
+    padding: 0px;
   }
 
   header nav ul li a {
