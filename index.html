@@ -4,7 +4,7 @@ title: Portfolio
 ---
 
 <ul class="projects clearfix">
-{% for post in site.categories.project %}
+{% for post in site.posts %}
   <li>
     <div class="project">
       <a class="cover" href="{{ post.url }}">
@@ -21,7 +21,11 @@ title: Portfolio
         </div>
       </a>
       <div class = "img-container">
-        <img class="thumb" src="img/{{page.type}}/{{page.uid}}.jpg" />
+        {% if post.type == "studio" %}
+          <img class="thumb" src="{{site.baseurl}}img/{{post.type}}/{{post.show}}/{{ post.uid }}.jpg" />
+        {% else %}
+          <img class="thumb" src="img/{{post.type}}/{{post.uid}}.jpg" />
+        {% endif %}
       </div>
       <div class="aspect-two-one"></div>
     </div>

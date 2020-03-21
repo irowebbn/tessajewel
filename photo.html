@@ -4,7 +4,8 @@ title: Portfolio
 ---
 
 <ul class="projects clearfix">
-{% for post in site.type.photo %}
+  {% for post in site.posts %}
+  {% if post.type == "photo"%}
   <li>
     <div class="project">
       <a class="cover" href="{{ post.url }}">
@@ -21,10 +22,11 @@ title: Portfolio
         </div>
       </a>
       <div class = "img-container">
-        <img class="thumb" src="img/{{page.type}}/{{page.uid}}.jpg" />
+        <img class="thumb" src="img/{{post.type}}/{{post.uid}}.jpg" />
       </div>
       <div class="aspect-two-one"></div>
     </div>
   </li>
-{% endfor %}
+{% endif %}
+  {% endfor %}
 </ul>
